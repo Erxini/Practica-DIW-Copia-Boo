@@ -1,0 +1,61 @@
+/*Configuracion imagenes fondo superior*/
+.bg-image1 {
+    background-image: url("./../assets/images/bambu-acero-vegetal-c.jpg");
+    background-size: 110%;
+
+    animation-name: fadeInOut;
+    animation-duration: 30s;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+} 
+
+@keyframes fadeInOut{
+    from{
+      background-position: bottom left;
+    }
+    to{    
+      background-position: top right;
+    }
+}
+/* Aplicación de la animación al texto */
+.animate-fadeInUp {
+    animation: fadeInUp 4s ease-out forwards;
+}
+/* Animación para el texto */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+ 
+/* Ocultar barra de scroll en las certificaciones */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; 
+  }
+/*Configuracion fondo sostenibilidad*/
+.bg-image2 {
+    background-image: url("./../assets/images/sostenibilidad-bambu-revestimientos-sc.jpg");
+    background-size: cover;
+} 
+/*Configuracion fondo dureza*/
+.bg-image3 {
+    background-image: url("./../assets/images/sostenibilidad-bambu-auditorio-sc.jpg");
+    background-size: cover;
+} 
+/*Configuracion fondo dureza*/
+.bg-image4 {
+    background-image: url("./../assets/images/celosia-lamas-bambu-c.jpg");
+    background-size: cover;
+} 
+/*Animacion de la personalizacion cnc*/
+.image-item {
+    transition: transform 1s ease-in-out;
+  }
+    
