@@ -1,17 +1,86 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <title>Tailwind2</title>
+  <title>Boo Bambú</title>
 </head>
-<body>
-  <h1 class="text-3xl bg-fondo text-texto m-0 text-center p-4 mt-20 ml-20 mr-20">
-    Hello world!
-  </h1>
-    <section class="grid-cols-1"></section>
-    <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia, at voluptates impedit, quisquam molestiae labore, pariatur voluptas consequuntur ullam deleniti quas cumque. Voluptate animi voluptatem incidunt soluta, id nostrum.</article>
- 
+
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-white sticky top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex flex-col items-center p-4">
+      <img src="./../assets/images/logo-boo-madera-bambu-c.png" alt="Logo Boo Bamboo" class="h-[130px] mb-6">
+      <nav>
+        <ul class="flex flex-wrap justify-center space-x-4">
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Inicio</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Bambú
+              Transformado</a></li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Productos</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Inspiración</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Proyectos</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Prensa</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Bambú</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Blog</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">Contacto</a>
+          </li>
+          <li><a href="#"
+              class="text-[1.4rem] p-5 text-gray-500 hover:text-lime-400 hover:border-b-[4px] hover:border-b-lime-400">ES</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="bg-green-50 py-20 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-green-800 mb-4">Embrace Nature's Best</h1>
+      <p class="text-gray-600 mb-6">Explore our range of eco-friendly bamboo products.</p>
+      <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+        Shop Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-16">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white shadow-md p-4 rounded-lg">
+        <img src="images/product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded">
+        <h2 class="text-lg font-bold mt-4">Bamboo Toothbrush</h2>
+        <p class="text-gray-600 mt-2">$10.00</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Boo Bamboo. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
+
+</html>
+</body>
+
 </html>
