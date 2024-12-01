@@ -6,93 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <link rel="shortcut icon" href="./../assets/images/logo-boo-bambu-madera-c.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./../assets/images/favicon.png" type="image/x-icon">
   <title>Inicio-Boo</title>
 </head>
 
 <body class="font-sans text-gray-800">
   <!-- Header -->
-  <header class="bg-white sticky top-0 left-0 w-full z-50">
-    <div class="container mx-auto flex flex-col items-center p-4">
-      <img src="./../assets/images/logo-boo-madera-bambu-c.png" alt="Logo Boo Bamboo" class="h-[125px] mb-6">
-      <nav>
+  <header class="lg:bg-white sticky top-0 left-0 w-full z-50">
+    <div class="container flex justify-between items-center mx-auto p-4 lg:flex lg:flex-col lg:items-center">
+      <img src="./../assets/images/logo-boo-madera-bambu-c.png" alt="Logo Boo Bamboo" class="h-[50px] lg:h-[125px] mb-3">
+  
+      <!-- Nav Burger -->
+      <button id="navburger" class="lg:hidden text-swamp-green-500 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    
+    
+      <nav class="hidden lg:block">
         <ul class="flex flex-wrap justify-center space-x-5">
           <li><a href="#"
-              class="text-[1.2rem] p-3 font-semibold text-olivine-400 border-b-[4px] border-b-olivine-400">Inicio</a>
+              class="text-[1.2rem] p-3 font-semibold text-swamp-green-500 border-b-[4px] border-b-swamp-green-500">Inicio</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Bambú
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Bambú
               Transformado</a></li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Productos</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Productos</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Inspiración</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Inspiración</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Proyectos</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Proyectos</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Prensa</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Prensa</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Bambú</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Bambú</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Blog</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Blog</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">Contacto</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">Contacto</a>
           </li>
           <li><a href="#"
-              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-olivine-400 hover:border-b-[4px] hover:border-b-olivine-400">ES</a>
+              class="text-[1.2rem] font-semibold p-3 text-gray-500 hover:text-swamp-green-500 hover:border-b-[4px] hover:border-b-swamp-green-500">ES</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="mt-6 border-red-700">
 
-    <!-- Background Section image move -->
+  <div class="container max-lg:1024px">
+  <main class="mt-0">
+    <!-- //Background Section image move -->
     <section
-      class="container relative w-full h-[300px] overflow-hidden flex items-center justify-center bg-gray-900 max-w-[calc(100%-200px)] mx-auto px-6 sm:px-12">
-      <div class="absolute inset-0 z-0">
-        <div class="bg-cover bg-center h-[300px] opacity-100 transition-opacity duration-[10s] bg-image1"></div>
-      </div>
-      <!-- Text container -->
-      <div class="relative z-10 text-center align-middle text-white px-2 sm:px-6">
-        <h1 class="text-3xl sm:text-4xl font-bold animate-fadeInUp">BAMBÚ, el acero vegetal</h1>
-      </div>
-    </section>
-
+    class="container relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] overflow-hidden flex items-center justify-center max-w-[calc(100%-200px)] mx-auto px-6 sm:px-12">
+    <div class="absolute inset-0 z-0 bg-cover bg-center bg-image1"></div>
+    <div class="relative z-10 text-center text-white px-2 sm:px-6">
+      <h1 class="text-3xl sm:text-3xl xl:text-4xl font-bold animate-fadeInUp">BAMBÚ, el acero vegetal</h1>
+    </div>
+  </section>
+   
     <!-- Certification Images -->
     <section class="py-12 bg-white">
       <div class="container mx-auto px-4">
         <!-- Contenedor desplazable -->
-        <div class="flex justify-center space-x-[50px] overflow-x-auto py-2 px-2 scrollbar-hide">
+        <div class="flex justify-center space-x-[9px] lg:space-x-[50px] overflow-x-auto py-2 px-2 scrollbar-hide">
           <img src="./../assets/images/certificacion-fsc-bambu-1.png" alt="Cert FSC"
-            class="h-[110px] object-contain hover:cursor-pointer">
+            class="h-[90px] lg:h-[110px] object-contain hover:cursor-pointer">
           <img src="./../assets/images/certificaciones-co2-neutral-1.png" alt="Cert CO2 Neutral"
-            class="h-[110px] object-contain hover:cursor-pointer">
+            class="h-[90px] lg:h-[110px] object-contain hover:cursor-pointer">
           <img src="./../assets/images/certificacion-biomasa-bambu-1.png" alt="Cert Biomasa"
-            class="h-[110px] object-contain hover:cursor-pointer">
+            class="h-[90px] lg:h-[110px] object-contain hover:cursor-pointer">
           <img src="./../assets/images/certificacion-leed-platinum-bambu-1.png" alt="Cert LEED Platinum"
-            class="h-[110px] object-contain hover:cursor-pointer">
+            class="h-[90px] lg:h-[110px] object-contain hover:cursor-pointer">
           <img src="./../assets/images/certificaciones-breeam-1.png" alt="Cert BREEAM"
-            class="h-[110px] object-contain hover:cursor-pointer">
+            class="h-[90px] lg:h-[110px] object-contain hover:cursor-pointer">
           <img src="./../assets/images/certificacion-emisiones-interior-locales-bambu-1.png" alt="Cert Emisiones"
-            class="h-[110px] object-contain hover:cursor-pointer">
+            class="h-[90px] lg:h-[110px] object-contain hover:cursor-pointer">
         </div>
       </div>
     </section>
 
+
+
     <!-- Sustainability Background -->
-    <section
-      class="container flex flex-col md:flex-row-reverse h-[450px] bg-image2 max-w-[calc(100%-200px)] mx-auto px-6 sm:px-12">
+    <section class="container flex flex-col md:flex-row-reverse h-[450px] bg-image2 max-w-[calc(100%-200px)] mx-auto px-6 sm:px-12">
       <!-- Text -->
-      <div class="w-full md:w-1/2 bg-olivine-400 bg-opacity-70 text-white text-[1.1rem] flex items-center ">
+      <div class="w-full md:w-1/2 bg-swamp-green-500 bg-opacity-70 text-white text-[0.7rem] lg:text-[1.1rem] flex items-center h-full lg:h-auto">
         <div class="p-[40px] space-y-5">
-          <h2 class="text-3xl font-semibold">Sostenibilidad</h2>
+          <h2 class="text-lg lg:text-3xl font-semibold">Sostenibilidad</h2>
           <p>El bambú es la planta con más rápido crecimiento y regeneración del planeta.
             Absorbe grandes cantidades de CO2. BOO representa beneficios ambientales,
             económicos y sociales que lo convierten en el material idóneo para los
@@ -105,15 +113,15 @@
     </section>
 
     <!-- Endings Section -->
-    <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
+    <section class="py-12 mx-8 bg-white">
+      <div class="container mx-auto">
         <h2 class="text-center text-[1.8rem]">Terminaciones</h2>
-        <div class="flex justify-center space-x-[15px] overflow-x-auto py-2 px-2 scrollbar-hide">
+        <div class="flex justify-center space-x-[10px] lg:space-x-[25px] overflow-x-auto py-2  scrollbar-hide">
           <div class="relative group">
             <img src="./../assets/images/bambu-boo-vertical-natural-c.jpg" alt="Tipo vertical-natural"
               class="h-[189px] object-contain hover:cursor-pointer">
             <div
-              class="absolute inset-0 bg-olivine-600 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+              class="absolute inset-0 bg-swamp-green-500 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
               <p class="text-white text-lg font-semibold">vertical natural</p>
             </div>
           </div>
@@ -122,7 +130,7 @@
             <img src="./../assets/images/bambu-boo-vertical-tostado-c.jpg" alt="Tipo vertical-tostado"
               class="h-[189px] object-contain hover:cursor-pointer">
             <div
-              class="absolute inset-0 bg-olivine-600 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+              class="absolute inset-0 bg-swamp-green-500 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
               <p class="text-white text-lg font-semibold">vertical tostado</p>
             </div>
           </div>
@@ -131,7 +139,7 @@
             <img src="./../assets/images/bambu-boo-horizontal-natural-c.jpg" alt="Tipo horizontal-natural"
               class="h-[189px] object-contain hover:cursor-pointer">
             <div
-              class="absolute inset-0 bg-olivine-600 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+              class="absolute inset-0 bg-swamp-green-500 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
               <p class="text-white text-lg font-semibold">horizontal natural</p>
             </div>
           </div>
@@ -140,7 +148,7 @@
             <img src="./../assets/images/bambu-boo-horizontal-tostado-c.jpg" alt="Tipo horizontal-tostado"
               class="h-[189px] object-contain hover:cursor-pointer">
             <div
-              class="absolute inset-0 bg-olivine-600 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+              class="absolute inset-0 bg-swamp-green-500 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
               <p class="text-white text-lg font-semibold">horizontal tostado</p>
             </div>
           </div>
@@ -149,7 +157,7 @@
             <img src="./../assets/images/bambu-boo-fibra-natural-rotated.jpg" alt="Tipo fibra-natural-rotated"
               class="h-[189px] object-contain hover:cursor-pointer">
             <div
-              class="absolute inset-0 bg-olivine-600 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+              class="absolute inset-0 bg-swamp-green-500 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
               <p class="text-white text-lg font-semibold">fibra natural</p>
             </div>
           </div>
@@ -158,7 +166,7 @@
             <img src="./../assets/images/bambu-boo-fibra-tostado-rotated.jpg" alt="Tipo fibra-tostado-rotate"
               class="h-[189px] object-contain hover:cursor-pointer">
             <div
-              class="absolute inset-0 bg-olivine-600 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+              class="absolute inset-0 bg-swamp-green-500 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
               <p class="text-white text-lg font-semibold">fibra tostado</p>
             </div>
           </div>
@@ -170,9 +178,9 @@
     <section
       class="container flex flex-col md:flex-row h-[450px] bg-image3 max-w-[calc(100%-200px)] mx-auto px-6 sm:px-12">
       <!-- Text -->
-      <div class="w-full md:w-1/2 bg-olivine-400 bg-opacity-70 text-white text-[1.1rem] flex items-center ">
+      <div class="w-full md:w-1/2 bg-swamp-green-500 bg-opacity-70 text-white text-[0.7rem] lg:text-[1.1rem] flex items-center h-full lg:h-auto">
         <div class="p-[40px] space-y-5">
-          <h2 class="text-3xl font-semibold">Dureza y estabilidad.</h2>
+          <h2 class="text-lg lg:text-3xl font-semibold">Dureza y estabilidad.</h2>
           <p>El bambú posee una dureza y densidad superior a maderas como el roble o el haya, siendo considerado el
             <strong>acero vegetal.</strong> Es por ello una alternativa en aplicaciones exigentes de alto tránsito.
 
@@ -192,13 +200,13 @@
     <section
       class="container flex flex-col md:flex-row-reverse h-[450px] bg-image4 max-w-[calc(100%-200px)] mx-auto px-6 sm:px-12">
       <!-- Text -->
-      <div class="w-full md:w-1/2 bg-olivine-400 bg-opacity-70 text-white text-[1.1rem] flex items-center ">
+      <div class="w-full md:w-1/2 bg-swamp-green-500 bg-opacity-70 text-white text-[0.7rem] lg:text-[1.1rem] flex items-center h-full lg:h-auto">
         <div class="p-[40px] space-y-5">
-          <h2 class="text-3xl font-semibold">Estética</h2>
+          <h2 class="text-lg lg:text-3xl font-semibold">Estética</h2>
           <p>Inspirado en la Naturaleza, el bambú responde con sofisticación y elegancia a cada <strong>proyecto de
               arquitectura.</strong> La línea de productos BOO responde con naturalidad, confort y calidez a cualquier
             diseño.</p>
-          <h2 class="text-3xl font-semibold">Saludable</h2>
+          <h2 class="text-lg lg:text-3xl font-semibold">Saludable</h2>
           <p>Materia prima 100% natural, con mínimo riesgo de provocar síntomas o reacciones alérgicas. Los productos
             BOO mantienen un ambiente interior saludable regulado por la norma europea EN 717/1 con clasificación E1 y
             baja o nula emisión de compuestos volátiles con certificación A.</p>
@@ -206,31 +214,91 @@
       </div>
     </section>
 
-   <!-- Personalization Section -->
-<section class="pt-4 pb-4 bg-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-center pb-2 text-[1.8rem]">Personalización en CNC</h2>
-   
-      <div id="imageContainer" class="flex space-x-6 justify-center">
-        <img src="./../assets/images/acabado-cnc-bambu-c-150x150.jpg" alt="acabado bambú" class="h-[180px] object-contain">
-        <img src="./../assets/images/bambu-macizo-trabajado-c-150x150.jpg" alt="bambú macizo" class="h-[180px] object-contain">
-        <img src="./../assets/images/bambu-roble-c-150x150.jpg" alt="bambú roble" class="h-[180px] object-contain">
-        <img src="./../assets/images/grabado-bambu-textura-c-150x150.jpg" alt="textura bambú" class="h-[180px] object-contain">
-        <img src="./../assets/images/personalizacion-bambu-c-150x150.jpg" alt="personalización bambú" class="h-[180px] object-contain">
-        <img src="./../assets/images/personalizacion-bambu-cnc-c-150x150.jpg" alt="personalización bambú cnc" class="h-[180px] object-contain">
+    <!-- Personalization Section -->
+    <section class="p-[50px] bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-center pb-2 text-[1.8rem]">Personalización en CNC</h2>
+
+        <div id="imageContainer" class="flex space-x-6 justify-center">
+          <img src="./../assets/images/acabado-cnc-bambu-c-150x150.jpg" alt="acabado bambú"
+            class="h-[180px] object-contain">
+          <img src="./../assets/images/bambu-macizo-trabajado-c-150x150.jpg" alt="bambú macizo"
+            class="hidden md:block h-[180px] object-contain">
+          <img src="./../assets/images/bambu-roble-c-150x150.jpg" alt="bambú roble" class="h-[180px] object-contain">
+          <img src="./../assets/images/grabado-bambu-textura-c-150x150.jpg" alt="textura bambú"
+            class="hidden lg:block h-[180px] object-contain">
+          <img src="./../assets/images/personalizacion-bambu-c-150x150.jpg" alt="personalización bambú"
+            class="hidden sm:block h-[180px] object-contain">
+          <img src="./../assets/images/personalizacion-bambu-cnc-c-150x150.jpg" alt="personalización bambú cnc"
+            class="h-[180px] object-contain">
+        </div>
       </div>
-    
-  </div>
-</section>
-
-
+    </section>
   </main>
+</div>
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2024 Boo Bamboo. All Rights Reserved.</p>
+  <footer class="bg-swamp-green-400 text-white py-8 px-4">
+    <div class="container mx-auto flex justify-between items-start gap-8">
+      <!-- Primera Columna -->
+      <div class="hidden lg:flex flex-col space-y-2">
+        <h2 class="font-bold text-lg">Bambú Transformado</h2>
+        <ul class="space-y-1">
+          <li>Tableros de bambú</li>
+          <li>Contrachapado de bambú</li>
+          <li>Chapas de bambú</li>
+          <li>Suelo macizo de bambú</li>
+          <li>Suelo exterior de bambú</li>
+          <li>Perfil laminado de bambú</li>
+        </ul>
+      </div>
+  
+      <!-- Segunda Columna -->
+      <div class="hidden lg:flex flex-col space-y-2">
+        <h2 class="font-bold text-lg">Productos</h2>
+        <ul class="space-y-1">
+          <li>Puertas y Ventanas</li>
+          <li>Revestimientos de lamas</li>
+          <li>Revestimiento con paneles</li>
+          <li>Celosías</li>
+          <li>Encimeras macizas</li>
+          <li>Suelo técnico</li>
+        </ul>
+      </div>
+  
+      <!-- Tercera Columna -->
+      <div class="hidden lg:flex flex-col space-y-2">
+        <h2 class="font-bold text-lg">Inspiración</h2>
+        <ul class="space-y-1">
+          <li>Proyectos</li>
+          <li>Bambú</li>
+          <li>Prensa</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+  
+      <!-- Cuarta Columna (Contacto) -->
+      <div class="flex flex-col space-y-2">
+        <h2 class="font-bold text-lg">Contacto</h2>
+        <p>Plaza Ruiz Alda 11, 41004</p>
+        <p>SEVILLA</p>
+        <p>T +34 954 369 357</p>
+        <p>comercial@boo-bamboo.com</p>
+      </div>
+  
+      <!-- Quinta Columna (Logo y Enlaces Legales) -->
+      <div class="flex flex-col items-center space-y-2">
+        <img src="./../assets/images/logo-boo-bambu-madera-c.png" alt="Logo boo" class="h-12">
+        <div class="text-sm text-center">
+          <a href="#" class="hover:underline">Aviso legal |</a>
+          <a href="#" class="hover:underline">Contacto |</a><br>
+          <a href="#" class="hover:underline">Política de cookies |</a>
+          <a href="#" class="hover:underline">Política de privacidad</a>
+        </div>
+      </div>
     </div>
   </footer>
+  
+  
   <script src="./script.js"></script>
 </body>
 

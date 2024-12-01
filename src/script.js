@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('imageContainer');
     const images = Array.from(container.getElementsByTagName('img'));

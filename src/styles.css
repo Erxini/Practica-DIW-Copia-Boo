@@ -1,10 +1,11 @@
 /*Configuracion imagenes fondo superior*/
 .bg-image1 {
     background-image: url("./../assets/images/bambu-acero-vegetal-c.jpg");
+    background-repeat: no-repeat;
     background-size: 110%;
 
     animation-name: fadeInOut;
-    animation-duration: 30s;
+    animation-duration: 20s;
 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -13,10 +14,10 @@
 
 @keyframes fadeInOut{
     from{
-      background-position: bottom left;
+      transform: scale(100%);
     }
     to{    
-      background-position: top right;
+      transform: scale(120%);
     }
 }
 /* Aplicación de la animación al texto */
@@ -27,11 +28,11 @@
 @keyframes fadeInUp {
     0% {
       opacity: 0;
-      transform: translate(100px);
+      transform: scale(20%);
     }
     100% {
       opacity: 1;
-      transform: translate(0);
+      transform: scale(100%);
     }
   }
  
