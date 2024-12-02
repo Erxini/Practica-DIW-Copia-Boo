@@ -5,7 +5,7 @@
     background-size: 110%;
 
     animation-name: fadeInOut;
-    animation-duration: 20s;
+    animation-duration: 10s;
 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -17,7 +17,7 @@
       transform: scale(100%);
     }
     to{    
-      transform: scale(120%);
+      transform: scale(105%);
     }
 }
 /* Aplicación de la animación al texto */
