@@ -101,6 +101,11 @@
           <p class="text-gray-600">Polígono Industrial Regajo Hondo,</p>
           <p class="text-gray-600">C/Isaac Peral 13, 41318 Villaverde del Río, SEVILLA</p>
         </div>
+        <div class="mb-6">
+          <h3 class="font-semibold text-gray-800">Tienda:</h3>
+          <p class="text-gray-600">Avenida de la Libertad 1, 41008 Sevilla</p>
+          <p class="text-gray-600">TF +34 954 369 356</p>
+        </div>
         <h2 class="text-lg font-bold text-swamp-green-400 mb-4">Redes Sociales</h2>
         <div class="flex space-x-4">
           <a href="#" aria-label="Instagram" title="Instagram" class="text-swamp-green-400 hover:cursor-pointer">
@@ -116,27 +121,32 @@
         
       </div>
     
-      <!-- Formulary of contact -->
-      <div class="lg:w-1/2 mt-10 lg:mt-0">
-        <h2 class="text-lg font-bold text-swamp-green-400 mb-4">Formulario de contacto</h2>
-        <form class="space-y-4">
-          <input type="text" placeholder="Nombre" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
-          <input type="email" placeholder="Correo" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
-          <input type="tel" placeholder="Teléfono" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
-          <textarea placeholder="Mensaje" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500"></textarea>
-          <div class="flex items-center">
-            <input type="checkbox" id="privacy-policy" class="h-4 w-4 text-swamp-green-400 focus:ring-swtext-swamp-green-500 border-gray-300 rounded">
-            <label for="privacy-policy" class="ml-2 text-sm text-gray-600">
-              Acepto la <a href="#" class="text-swamp-green-400 hover:underline">Política de Privacidad</a> de este sitio web.
-            </label>
-          </div>
-          <button type="submit" class="bg-text-swamp-green-400 text-white px-6 py-2 rounded hover:bg-swamp-green-400 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
-            Enviar
-          </button>
-        </form>
-      </div>
+     <!-- Formulary of contact -->
+<div class="lg:w-1/2 mt-10 lg:mt-0">
+  <h2 class="text-lg font-bold text-swamp-green-400 mb-4">Formulario de contacto</h2>
+  <form id="contactForm" class="space-y-4">
+    <input type="text" id="nombre" placeholder="Nombre*" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
+    <p id="nombreError" class="text-red-500 text-sm mt-1"></p>
+    <input type="text" id="apellidos" placeholder="Apellidos*" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
+    <p id="apellidosError" class="text-red-500 text-sm mt-1"></p>
+    <input type="text" id="dni" placeholder="DNI*" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
+    <p id="dniError" class="text-red-500 text-sm mt-1"></p>
+    <input type="email" id="correo" placeholder="Correo*" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
+    <p id="correoError" class="text-red-500 text-sm mt-1"></p>
+    <input type="tel" id="telefono" placeholder="Teléfono*" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500">
+    <textarea placeholder="Mensaje" rows="4" id="mensaje" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-swtext-swamp-green-500"></textarea>
+    <div class="flex items-center">
+      <input type="checkbox" id="politica" class="h-4 w-4 text-swamp-green-400 focus:ring-swtext-swamp-green-500 border-gray-300 rounded">
+      <label for="politica" class="ml-2 text-sm text-gray-600">
+        Acepto la <a href="#" class="text-swamp-green-400 hover:underline">Política de Privacidad</a> de este sitio web.
+      </label>
     </div>
-    
+    <p id="politicaError" style="color: red;"></p> 
+    <button id="submit" type="submit" class="bg-swamp-green-400 text-white px-6 py-2 rounded hover:cursor-pointer">
+      Enviar
+    </button>
+  </form>
+</div>
     </main>
   
     <!-- Footer -->
@@ -201,5 +211,6 @@
     </div>
   </footer>  
   <script src="./script.js"></script>
+  <script src="./../js/validation.js"></script>
   </body>
   </html>
