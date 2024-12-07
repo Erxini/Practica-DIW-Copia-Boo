@@ -80,39 +80,39 @@
 
     <!-- Main Content -->
     <div class="bg-white min-h-screen px-4 py-4 lg:px-20">
-           <div class="flex justify-center space-x-4 mb-4">
+           <div class="filter-menu flex justify-center space-x-4 mb-4">
         <button 
-        class="text-[0.6rem] md:text-[1.1rem] p-3 font-semibold text-swamp-green-400 border-b-[4px] border-b-swamp-green-400"
+        class="filter-tab text-[0.6rem] md:text-[1.1rem] p-3 font-semibold text-swamp-green-400 border-b-[4px] border-b-swamp-green-400"
           data-category="all">
           Todos
         </button>
         <button 
-          class="text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
+          class="filter-tab text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
           data-category="paredes">
           Paredes
         </button>
         <button 
-          class="text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
+          class="filter-tab text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
           data-category="techos">
           Techos
         </button>
         <button 
-          class="text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
+          class="filter-tab text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
           data-category="suelos">
           Suelos
         </button>
         <button 
-          class="text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
-          data-category="muebles">
-          Muebles
+        class="filter-tab text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
+        data-category="acustico">
+        Acústico
+      </button>
+        <button 
+          class="filter-tab text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
+          data-category="mobiliario">
+          Mobiliario
         </button>
         <button 
-          class="text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
-          data-category="decoracion">
-          Decoración
-        </button>
-        <button 
-          class="text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
+          class="filter-tab text-[0.6rem] font-semibold md:text-[1.1rem] p-3 text-gray-300 hover:text-black hover:border-b-[4px] hover:border-b-swamp-green-400"
           data-category="puertasyventanas">
           Puertas y Ventanas
         </button>
@@ -121,123 +121,321 @@
       <!-- Galería de imágenes -->
       <div id="gallery" class="image-gallery columns-2 sm:columns-3 lg:columns-4 gap-4">
         <!-- Imágenes con categorías -->
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-4-6-ventanas-bambu-curvo.jpg" alt="Ventana de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/2-3-5-mesas-bambu-macizo-1.jpg" alt="Mesas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item muebles opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-4-revestimiento-acustico-bambu-panel.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item decoracion opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-4-6-revestimiento-puerta-oculta-bambu.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-revestimientos-bambu-sustentable.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-techo-acustico-curvo.jpg" alt="Techo de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-revestimiento-bambu-museo.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-5-6revestimiento-puertas-mobiliario-bambu.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/5-mesa-bambu-macizo-1.jpg" alt="Mesa de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-4-bambu-boo-revestimiento-acustico.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/2-3-5-bancoz-bambu-1.jpg" alt="Mobiliario de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/2-3-revestimiento-auditorio-bambu-acustico-boo-1.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-6-puertas-bambu-boo.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/2-techo-curvo-bamboo-boo.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-5-6revestimiento-puertas-mobiliario-bambu.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item ventanas opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/6-ventana-bambu-boo-1.jpg" alt="Ventanas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item puertas opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-6-puerta-oculta-doble-bambu-boo.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item suelos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/3-tarima-bambu-1.jpg" alt="Tarima de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-revestimiento-lamas-macizas-bambu-boo.jpg" alt="Ventanas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-4-6-revestimiento-puerta-oculta-bambu-boo.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-4-techo-acustico-lamas-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/2-3-4revestimiento-auditorio-bambu-1.jpg" alt="Techo de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-listones-bambu-boo-interiores.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item acustico opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-4-cubierta-curva-bambu-acustico.jpg" alt="Techo de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item ventanas opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-marco-de-bambu.jpg" alt="Marco de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item suelos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/3-suelo-macizo-bamboo.jpg" alt="Suelo de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-4-6-cubierta-curva-bambu.jpg" alt="Cubiertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-revestimientos-celosia-bambu-boo.jpg" alt="Celosia de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/2-techo-lamas-macizas-bambu.jpg" alt="Techo de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item mobiliario opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-5-armarios-bambu.jpg" alt="Armarios de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
-        </div>
-        <div class="image-item decoracion opacity-0 transition-opacity duration-700 mb-4">
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
           <img src="./../../assets/images/galeria/1-2-3-4-5-escaleras-bambu-boo.jpg" alt="Escaleras de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
-        <div class="image-item mobiliario opacity-0 transition-opacity duration-700 mb-4">
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
           <img src="./../../assets/images/galeria/1-2-3-4-5-estanterias-bambu.jpg" alt="Estanterias de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-5-revestimiento-mobiliario-bambu-boo.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-6-revestimiento-puerta-oculta-bambu-boo.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
-        <div class="image-item techos opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-4-techo-acustico-lamas-bambu-boo.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-6-revestimiento-puerta-oculta-bambu.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
-        <div class="image-item mobiliario opacity-0 transition-opacity duration-700 mb-4">
+        <div class="image-item ventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-6-ventanas-bambu-curvo.jpg" alt="Ventanas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-cubierta-curva-bambu-acustico.jpg" alt="Techo de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-escaleras-bambu-auditorio.jpg" alt="Escaleras de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
           <img src="./../../assets/images/galeria/1-2-3-4-gradas-bambu.jpg" alt="Gradas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-5-revestimiento-mobiliario-bambu.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-revestiemiento-bambu-boo-ecologico.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
-        <div class="image-item paredes opacity-0 transition-opacity duration-700 mb-4">
-          <img src="./../../assets/images/galeria/1-2-3-5-revestimiento-mobiliario-bambu.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-revestimiento-acustico-bambu-leed.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-techo-acustico-lamas-bambu-boo.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-4-techo-acustico-lamas-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-5-armarios-bambu.jpg" alt="Armario de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-5-revestimiento-mobiliario-bambu-boo.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-5-revestimiento-mobiliario-bambu.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-6-puerta-bambu-boo.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-6-puerta-oculta-doble-bambu-boo.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-6-puerta-oculta-bambu-boo.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-6-puerta-oculta-bambu.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-celosias-techo-lamas-bambu-boo.jpg" alt="Celosías de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-escaleras-bambu.jpg" alt="Escaleras de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-escaleras-diseno-bambu.jpg" alt="Escaleras de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-celocias-bambu.jpg" alt="Celosias de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-bambu-museo.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-listones-bambu-boo.jpg" alt="Revestimientos bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-listones-bambu-macizo.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-listones-bambu.jpg" alt="Revestimiento de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimientos-celosia-bambu-boo.jpg" alt="Celosia de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-paneles-bambu-boo.jpg" alt="Paneles de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimiento-taquillas-bambu.jpg" alt="Taquillas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-3-revestimientos-bambu-sustentable.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-5-6-bambu-acustico-boo.jpg" alt="Imagen de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-5-auditorio-retamar-bambu.jpg" alt="Auditorio de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-6-cubierta-curva-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-auditorio-bamboo-boo.jpg" alt="Auditorio de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-paneles-acusticos-perforados-bambu-boo.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-paneles-acusticos-perforados-bambu.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-4-techo-paneles-acusticos-perforados-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-bambu-boo-interiores.jpg" alt="Interiores de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-celosia-suspendida-bambu-boo.jpg" alt="Celosías de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-listones-bambu-boo-interiores.jpg" alt="Listones de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-marco-de-bambu.jpg" alt="Marco de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-portico-bambu-hueco.jpg" alt="Pórtico de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-porticos-bambu.jpg" alt="Pórticos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-revestimiento-acustico-bambu-perforado.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-revestimiento-bambu-boo-listones.jpg" alt="Listones de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-revestimiento-lamas-bambu-boo.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-revestimiento-pared-techo-acustico-perforado.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acustico opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-2-techo-acustico-curvo.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-6-revestimiento-bambu-ecologico.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-bambu-boo.jpg" alt="Mobiliario de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-detalle-celosias-bambu-bo.jpg" alt="Celosias de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-lamas-bamboo.jpg" alt="Lamas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-listones-bamboo.jpg" alt="Listones de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-revestimiento-bambu-clinica.jpg" alt="Paredes de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-suelo-tecnico-bambu-macizo-boo.jpg" alt="Suelos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-3-tarima-exterior-bamboo-boo.jpg" alt="Suelos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acusticos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-4-bambu-boo-revestimiento-acustico.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acusticos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-4-revestimiento-acustico-bambu-panel.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-5-6revestimiento-puertas-mobiliario-bambu.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-6-puerta-acristalada-bambu.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-6-puertas-bambu-boo.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-6-revestimiento-bambu-boo.jpg" alt="Suelos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-6-revestimiento-pared-bambu.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-portico-bambu-boo.jpg" alt="Pórtico de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-revestiemiento-macizo-bambo-boo.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item paredes opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-revestiemiento-macizo-bambo.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-revestimiento-curvo-bambu.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-revestimiento-lamas-macizas-bambu-boo.jpg" alt="Lamas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/1-revestimiento-lamas-macizas-bambu.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acusticos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-4-6-techo-acustico-bambu-1.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-4-6-ventana-bambu-1.jpg" alt="Ventanas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-4-revestimiento-lamas-bambu-aduditorio-1.jpg" alt="Lamas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-4revestimiento-auditorio-bambu-1.jpg" alt="Revestimientos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-5-bancoz-bambu-1.jpg" alt="Banco de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-5-mesas-bambu-macizo-1.jpg" alt="Mesas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-5-mobiliario-revestimiento-bambu-1.jpg" alt="Muebles de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acusticos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-auditorio-bambu-acustico-1.jpg" alt="Auditorio de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-bambu-interior-boo-1.jpg" alt="Interiores de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item acusticos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-3-revestimiento-auditorio-bambu-acustico-boo-1.jpg" alt="Auditorio de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-6ventana-curva-bambu-1.jpg" alt="Ventana de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-cubierta-bambu-lamas-1.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-lamas-bambu.jpg" alt="Lamas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-revestimiento-techo-bambu-1.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-techo-curvo-bamboo-boo.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-techo-curvo-bambu-boo.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-techo-curvo-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-techo-lamas-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item techos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/2-techos-lamas-bambu.jpg" alt="Techos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/3-5-mobiliario-bamboo-boo.jpg" alt="Muebles de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/3-suelo-macizo-bamboo-boo.jpg" alt="Suelos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/3-suelo-macizo-bamboo.jpg" alt="Suelos de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/3-tarima-bambu-1.jpg" alt="Tarima de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/3-tarima-bambu-termotratado-1.jpg" alt="Tarima de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item suelos opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/3-tarima-exterior-bambu-1.jpg" alt="Tarima de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/5-6-puertas-estilo-japones-1.jpg" alt="Puertas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/5-mesa-bambu-macizo-1.jpg" alt="Mesas de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item mobiliario opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/5-mobiliario-bambu-macizo-1.jpg" alt="Muebles de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/6-puerta-crilta-bambu-1.jpg" alt="Puerta de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/6-puerta-mixta-bambu-laca-1.jpg" alt="Puerta de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/6-puerta-ventana-bambu-1.jpg" alt="Puerta-ventana de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item puertasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/6-ventana-bambu-boo-1.jpg" alt="Ventana de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
+        </div>
+        <div class="image-item purtasyventanas opacity-0 transition-opacity duration-1000 animate-fadeIn mb-4">
+          <img src="./../../assets/images/galeria/6-ventana-bambu-macizo-1.jpg" alt="Ventana de bambú" class="w-full h-auto object-cover hover:backdrop:grayscale hover:cursor-pointer transition duration-600 ease-in-out hover:grayscale-[50%]">
         </div>
       </div>
     </div>
     
    <!-- END Main Content -->
     <!-- Footer -->
-  <footer class="bg-swamp-green-400 text-white py-8 px-4">
+  <footer class="bg-swamp-green-400 text-white py-8 px-[50px]">
     <div class="container mx-auto flex justify-between items-start gap-8">
       <!-- Primera Columna -->
       <div class="hidden lg:flex flex-col space-y-2">

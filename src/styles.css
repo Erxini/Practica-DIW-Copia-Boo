@@ -62,18 +62,32 @@
 
   
 /*Animaciones de la pagina inspiración*/
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
   }
-  
-  .image-item.show {
+  to {
     opacity: 1;
-    animation: fadeIn 0.8s ease-out;
+    transform: scale(1);
   }
+}
+
+.image-item {
+  opacity: 0;
+  transform: scale(0.9);
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.image-item.show {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  animation: fadeInScale 1s ease-in-out;
+}
+
+.active-tab {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}

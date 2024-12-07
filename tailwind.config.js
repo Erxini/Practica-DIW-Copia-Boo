@@ -33,8 +33,15 @@ module.exports = {
           'to': { opacity: '0' },
         },
       },
-    
-      
+      animation: {
+        fadeInScale: "fadeInScale 1s ease-in-out",
+      },
+      keyframes: {
+        fadeInScale: {
+          "0%": { opacity: 0, transform: "scale(0.9)" },
+          "100%": { opacity: 1, transform: "scale(1)" },
+        },
+      },    
     },
   },
   plugins: [],
