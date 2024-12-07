@@ -1,10 +1,8 @@
-// Obtener el formulario
+// Formulario
 const form = document.getElementById('contactForm');
 
 const handleSubmit = (event) => {
   event.preventDefault(); 
-
-  // Obtener los input
   const nombre = document.getElementById('nombre');
   const iban = document.getElementById('iban');
   const dni = document.getElementById('dni');
@@ -75,6 +73,5 @@ inputs.forEach(input => {
     const errorElement = document.getElementById(e.target.id+' Error');
     e.target.setCustomValidity(''); 
     errorElement.textContent = ''; 
-    
   });
 });

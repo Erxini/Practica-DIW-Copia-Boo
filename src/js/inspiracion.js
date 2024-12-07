@@ -3,35 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.image-item');
   const gallery = document.getElementById('gallery');
 
-  // Normalizar nombres de clases para evitar errores por espacios o mayúsculas
   const normalizeClass = str => str.trim().toLowerCase();
 
   // Filtrar imágenes por categoría
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const category = normalizeClass(tab.getAttribute('data-category'));
-      console.log(`Categoría seleccionada: ${category}`);
+      console.log('Categoría seleccionada: ' + category);
 
-      // Actualizar pestañas activas
       tabs.forEach(t => t.classList.remove('active-tab'));
       tab.classList.add('active-tab');
 
-      // Mostrar/ocultar imágenes según la categoría seleccionada
+      // Mostrar/ocultar
       images.forEach(image => {
         const imageClasses = [...image.classList].map(normalizeClass);
 
         if (category === 'all' || imageClasses.includes(category)) {
-          console.log(`Imagen mostrada: ${image.getAttribute('class')}`);
-          image.style.display = 'block'; // Mostrar
-          setTimeout(() => image.classList.add('show'), 50); // Agregar animación
+          console.log('Imagen mostrada: ' + image.getAttribute('class'));
+          image.style.display = 'block';
+          setTimeout(() => image.classList.add('show'), 50);
         } else {
           image.classList.remove('show');
-          setTimeout(() => (image.style.display = 'none'), 500); // Esconder después de animación
+          setTimeout(() => (image.style.display = 'none'), 500);
         }
       });
-
-      // Desplazarse hacia la parte superior de la galería
-      const galleryTop = gallery.offsetTop-300; // Obtiene la posición superior del contenedor
+      //Imagenes en la parte superior al clicar
+      const galleryTop = gallery.offsetTop - 300;
       window.scrollTo({
         top: galleryTop,
         behavior: 'smooth',
@@ -39,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Agregar animación al hacer scroll (IntersectionObserver)
+  //Animación 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -47,6 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
   images.forEach(image => observer.observe(image));
 });
